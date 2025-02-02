@@ -385,3 +385,47 @@ nav > ul > li > a[aria-haspopup="true"]::after {
   top: 50%;
   transform: translateY(-50%);
 }
+
+/* Base Styles */
+h1 {
+  font-size: 3em;
+}
+
+header div.hero {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header div.hero h1 {
+  margin-bottom: 30px;
+}
+
+/* Section - Atmosphere */
+section.atmosphere article {
+  padding-left: 50px;
+  background-size: 500px auto;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 2.4em;
+  }
+
+  /* Header */
+  header div.hero {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  header div.hero h1 {
+    margin-bottom: 20px;
+  }
+
+  /* Section - Atmosphere */
+  section.atmosphere article {
+    padding-left: 10%;
+    background-size: contain;
+  }
+}
