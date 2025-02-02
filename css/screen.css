@@ -356,3 +356,32 @@ nav > ul > li > a {
   width: auto;
   padding: 10px 20px 15px 20px;
 }
+
+nav a[aria-haspopup="true"] {
+  position: relative; /* Ensure relative positioning */
+}
+
+nav a[aria-haspopup="true"]::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #fff; /* Change color for visibility */
+}
+
+nav > ul > li > a[aria-haspopup="true"]::after {
+  border-left: 0;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff; /* Adjust color */
+  left: auto;
+  right: 10px;
+  bottom: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
