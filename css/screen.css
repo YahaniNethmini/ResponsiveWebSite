@@ -462,3 +462,58 @@ section.atmosphere article {
     font-size: 0.85em;
   }
 }
+
+@media screen and (max-width: 760px) {
+  h1 {
+    font-size: 1.8em !important;
+  }
+
+  h2 {
+    font-size: 1.4em !important;
+  }
+
+  h3 {
+    font-size: 1.1em !important;
+  }
+
+  a.btn {
+    font-size: 1em !important;
+  }
+
+  /* Header */
+  header a.logo {
+    width: 145px;
+    height: 60px;
+  }
+
+  header div.hero {
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Section - Main */
+  section.main {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  section.main aside div.content {
+    background-size: 55px 55px;
+    padding-top: 60px;
+  }
+
+  /* Section - How to */
+  section.how-to aside div.content img {
+    width: 85%;
+  }
+
+  /* Navigation */
+  nav {
+    padding-top: 80px;
+  }
+
+  nav > ul {
+    padding-left: 10px;
+  }
+}
