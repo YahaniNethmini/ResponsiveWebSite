@@ -534,14 +534,13 @@ section.atmosphere article {
   /* Header */
   header {
     height: 160px;
-    background-image: url("../images/banner_625.jpg");
-    background-position: left top;
+    background: url("../images/banner_625.jpg") left top / cover no-repeat;
   }
 
   /* Navigation */
   nav {
-    position: static;
-    width: auto;
+    position: relative;
+    width: 100%;
     padding: 20px 15px;
     background-color: #4b0a0c;
   }
